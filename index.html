@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>דף נחיתה – [שם המיזם]</title>
+  <meta name="description" content="דף נחיתה מהיר לבדיקת רעיון עסקי – איסוף מתעניינים בקליק.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827;
+      --muted:#94a3b8;
+      --text:#e5e7eb;
+      --accent:#22c55e;
+      --accent-2:#06b6d4;
+      --ring:rgba(34,197,94,.4);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Heebo',system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 100% -10%, rgba(6,182,212,.25), transparent 60%),
+                  radial-gradient(1200px 600px at -10% 0%, rgba(34,197,94,.2), transparent 60%),
+                  var(--bg);
+      line-height:1.6;
+    }
+    a{color:var(--accent)}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    .nav{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:8px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+    .badge{font-size:12px;background:#172554;border:1px solid #1e3a8a;color:#93c5fd;padding:4px 10px;border-radius:999px}
+    .hero{
+      display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;
+      padding:40px 0 10px
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(6px);
+      border-radius:var(--radius);
+      box-shadow:0 20px 60px rgba(0,0,0,.25);
+    }
+    .hero .copy{padding:26px 28px}
+    .h1{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:0 0 10px}
+    .lead{color:var(--muted);font-size:18px;margin:0 0 18px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{
+      appearance:none;border:0;border-radius:14px;padding:14px 18px;font-weight:700;
+      cursor:pointer;transition:.2s transform,.2s filter;display:inline-flex;align-items:center;gap:10px;text-decoration:none
+    }
+    .btn:focus{outline:3px solid var(--ring);outline-offset:2px}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),#16a34a);color:#062a12}
+    .btn-secondary{background:#0b1220;border:1px solid rgba(255,255,255,.1);color:#cbd5e1}
+    .small{font-size:13px;color:var(--muted)}
+    .trust{display:flex;gap:16px;align-items:center;margin-top:16px;flex-wrap:wrap}
+    .trust img{height:28px;opacity:.8;filter:grayscale(1)}
+    .panel{padding:22px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+    .fi{padding:18px;border-radius:16px;border:1px dashed rgba(255,255,255,.12)}
+    .fi b{display:block;margin-bottom:6px}
+    .testi{display:flex;gap:12px;align-items:flex-start;margin-top:8px}
+    .avatar{width:44px;height:44px;border-radius:50%;background:#1f2937}
+    .faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    details{padding:14px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:#0b1220}
+    summary{cursor:pointer;font-weight:600;margin-bottom:6px}
+    .footer{margin:40px 0 10px;text-align:center;color:var(--muted);font-size:14px}
+    .form-card{padding:20px}
+    .field{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+    .input{padding:14px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.16);background:#0b1220;color:var(--text)}
+    .input:focus{outline:3px solid var(--ring);border-color:transparent}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .features{grid-template-columns:1fr}
+      .faq{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2l3.5 7H22l-6 4.5L19.5 21 12 16.8 4.5 21 8 13.5 2 9h6.5L12 2z" fill="url(#g)"/>
+          <defs><linearGradient id="g" x1="0" y1="0" x2="24" y2="24">
+            <stop stop-color="#22c55e"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+        </svg>
+        <span>[שם המיזם]</span>
+      </div>
+      <span class="badge">בטא סגורה</span>
+    </div>
+
+    <section class="hero">
+      <div class="copy card">
+        <div class="panel">
+          <p class="badge" style="display:inline-block">חדש</p>
+          <h1 class="h1">בודקים עניין לפני שמפתחים: <br> דף נחיתה בעברית בכמה דקות</h1>
+          <p class="lead">הציגו את הרעיון שלכם, אספו אימיילים ומתעניינים, וקבלו הוכחת ביקוש בלי לכתוב שורת קוד.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="https://forms.gle/REPLACE_WITH_YOUR_FORM_ID" target="_blank" rel="noopener">הצטרפו לרשימת ההמתנה</a>
+            <a class="btn btn-secondary" href="https://wa.me/?text=%D7%A9%D7%9E%D7%A2%D7%95%20%D7%A2%D7%9C%20%D7%94%D7%A8%D7%A2%D7%99%D7%95%D7%9F%20%D7%A9%D7%9C%D7%99:%20[שם%20המיזם]" target="_blank" rel="noopener">שתפו ב‑WhatsApp</a>
+          </div>
+          <p class="small">טיפ: לחצו על הכפתור הירוק והדביקו כאן קישור לטופס Google שלכם.</p>
+
+          <div class="trust">
+            <span class="small">נבדק עם משתמשים מ‑</span>
+            <img alt="logo" src="https://dummyimage.com/100x28/ffffff/000000.png&text=A"/>
+            <img alt="logo" src="https://dummyimage.com/100x28/ffffff/000000.png&text=B"/>
+            <img alt="logo" src="https://dummyimage.com/100x28/ffffff/000000.png&text=C"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="card form-card">
+        <h3 style="margin-top:0">רוצים לשמוע קודם? השאירו אימייל</h3>
+        <!-- אפשרות 1: טופס פשוט שישלח ל-Netlify אם תארחו שם -->
+        <form name="lead" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="lead">
+          <div class="field">
+            <label for="email">אימייל</label>
+            <input id="email" name="email" type="email" required class="input" placeholder="name@example.com">
+          </div>
+          <div class="field">
+            <label for="use">למה זה מעניין אתכם?</label>
+            <input id="use" name="use" class="input" placeholder="משפט אחד קצר">
+          </div>
+          <button class="btn btn-primary" type="submit">אני בעניין</button>
+          <p class="small">לא ב‑Netlify? החליפו ל‑Google Form והסירו את הטופס הזה.</p>
+        </form>
+        <hr style="border-color:rgba(255,255,255,.1);margin:18px 0">
+        <!-- אפשרות 2: הטמעת Google Form (החליפו את ה-src) -->
+        <iframe title="Google Form" style="width:100%;height:360px;border:1px solid rgba(255,255,255,.15);border-radius:12px"
+                src="ABOUT:BLANK">
+        </iframe>
+        <p class="small">הדביקו כאן את קישור ההטמעה של Google Forms במקום ABOUT:BLANK.</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="fi card">
+        <b>מסר חד</b>
+        <span>תועלת אחת מרכזית ובעלים ספציפיים. הימנעו ממילים כלליות.</span>
+      </div>
+      <div class="fi card">
+        <b>הוכחה חברתית</b>
+        <span>ציטוט אחד, לוגו של לקוח, או מספר קטן (“+120 נרשמים”).</span>
+      </div>
+      <div class="fi card">
+        <b>קריאה לפעולה</b>
+        <span>כפתור יחיד וברור לאורך העמוד – לרשימה/דמו/שיחה.</span>
+      </div>
+    </section>
+
+    <section class="card panel" style="margin-top:16px">
+      <div class="testi">
+        <div class="avatar"></div>
+        <div>
+          <b>“סוף סוף בדקנו ביקוש לפני בנייה.”</b>
+          <div class="small">יעל, מייסדת</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" style="margin-top:16px">
+      <details class="card">
+        <summary>למה דף נחיתה ולא מוצר?</summary>
+        <div>כי צריך קודם לבדוק שיש מי שמרים יד. אם אין הרשמות – חסכנו חודשים.</div>
+      </details>
+      <details class="card">
+        <summary>איך מביאים תנועה?</summary>
+        <div>קבוצות פייסבוק/ווטסאפ רלוונטיות, חברים למקצוע, פוסט בלינקדאין, או מודעת Google קטנה על מילות מפתח ממוקדות.</div>
+      </details>
+      <details class="card">
+        <summary>אפשר דומיין אישי?</summary>
+        <div>כן. ב‑Netlify/Wix מחברים דומיין בקלות; אפשר להתחיל עם דומיין חינמי ואז לשדרג.</div>
+      </details>
+      <details class="card">
+        <summary>מה למדוד?</summary>
+        <div>CTR על הכפתור, אחוז הרשמה, ועלות לליד אם מריצים מודעה. יעד טוב להתחלה: 5–20% המרות.</div>
+      </details>
+    </section>
+
+    <p class="footer">© [שם המיזם] • נכתב ל‑RTL בעברית • אפשר לערוך כל טקסט בקובץ</p>
+  </div>
+</body>
+</html>
